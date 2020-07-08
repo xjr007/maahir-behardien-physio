@@ -2,13 +2,9 @@ import React, { Fragment } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-	HOME_PAGE,
-	PERSONNEL_PAGE,
-	ABOUT_PAGE,
-	CONTACT_PAGE,
-} from '../routes/Routes';
+import { PERSONNEL_PAGE, ABOUT_PAGE, CONTACT_PAGE } from '../routes/Routes';
 
 const NavbarNavigation = () => {
 	return (
@@ -21,14 +17,22 @@ const NavbarNavigation = () => {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='ml-auto bold_font'>
-						<Nav.Link href={HOME_PAGE}>Home</Nav.Link>
+						<NavLink className='nav-link' to='maahir-behardien-physio'>
+							Home
+						</NavLink>
 
 						<NavDropdown title='About us' id='collasible-nav-dropdown'>
-							<NavDropdown.Item href={ABOUT_PAGE}>What we do </NavDropdown.Item>
-							<NavDropdown.Item href={PERSONNEL_PAGE}>Personnel</NavDropdown.Item>
+							<NavLink className='dropdown-item' to={ABOUT_PAGE}>
+								What we do
+							</NavLink>{' '}
+							<NavLink className='dropdown-item' to={PERSONNEL_PAGE}>
+								Personnel
+							</NavLink>
 						</NavDropdown>
 
-						<Nav.Link href={CONTACT_PAGE}>Contact</Nav.Link>
+						<NavLink className='nav-link' to={CONTACT_PAGE}>
+							Contact
+						</NavLink>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

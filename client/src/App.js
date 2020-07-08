@@ -13,7 +13,6 @@ import About from './components/pages/About';
 import Personnel from './components/pages/Personnel';
 
 import {
-	HOME_PAGE,
 	CONTACT_PAGE,
 	ABOUT_PAGE,
 	PERSONNEL_PAGE,
@@ -26,7 +25,7 @@ const App = () => {
 				<Navbar />
 				<Container fluid>
 					<Switch>
-						<Route exact path={HOME_PAGE} component={Home} />
+						<Route exact path='/maahir-behardien-physio/' component={Home} />
 						<Route exact path={CONTACT_PAGE} component={Contact} />
 						<Route exact path={ABOUT_PAGE} component={About} />
 						<Route exact path={PERSONNEL_PAGE} component={Personnel} />
