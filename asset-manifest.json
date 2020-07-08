@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/maahir-behardien-physio/static/css/main.7adfdf4f.chunk.css",
-    "main.js": "/maahir-behardien-physio/static/js/main.a68cf407.chunk.js",
-    "main.js.map": "/maahir-behardien-physio/static/js/main.a68cf407.chunk.js.map",
+    "main.js": "/maahir-behardien-physio/static/js/main.6b53195d.chunk.js",
+    "main.js.map": "/maahir-behardien-physio/static/js/main.6b53195d.chunk.js.map",
     "runtime-main.js": "/maahir-behardien-physio/static/js/runtime-main.5c7de229.js",
     "runtime-main.js.map": "/maahir-behardien-physio/static/js/runtime-main.5c7de229.js.map",
     "static/css/2.af3c1da9.chunk.css": "/maahir-behardien-physio/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.1186d3a6.chunk.js": "/maahir-behardien-physio/static/js/2.1186d3a6.chunk.js",
-    "static/js/2.1186d3a6.chunk.js.map": "/maahir-behardien-physio/static/js/2.1186d3a6.chunk.js.map",
+    "static/js/2.c54ee9ab.chunk.js": "/maahir-behardien-physio/static/js/2.c54ee9ab.chunk.js",
+    "static/js/2.c54ee9ab.chunk.js.map": "/maahir-behardien-physio/static/js/2.c54ee9ab.chunk.js.map",
     "index.html": "/maahir-behardien-physio/index.html",
-    "precache-manifest.f22b514c2da7e9f002f0e20c859acde1.js": "/maahir-behardien-physio/precache-manifest.f22b514c2da7e9f002f0e20c859acde1.js",
+    "precache-manifest.5e3288c63fda76acc9143780016d712f.js": "/maahir-behardien-physio/precache-manifest.5e3288c63fda76acc9143780016d712f.js",
     "service-worker.js": "/maahir-behardien-physio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/maahir-behardien-physio/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.7adfdf4f.chunk.css.map": "/maahir-behardien-physio/static/css/main.7adfdf4f.chunk.css.map",
-    "static/js/2.1186d3a6.chunk.js.LICENSE.txt": "/maahir-behardien-physio/static/js/2.1186d3a6.chunk.js.LICENSE.txt"
+    "static/js/2.c54ee9ab.chunk.js.LICENSE.txt": "/maahir-behardien-physio/static/js/2.c54ee9ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5c7de229.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.1186d3a6.chunk.js",
+    "static/js/2.c54ee9ab.chunk.js",
     "static/css/main.7adfdf4f.chunk.css",
-    "static/js/main.a68cf407.chunk.js"
+    "static/js/main.6b53195d.chunk.js"
   ]
 }
