@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from '../../assets/img/MBP_Logo.png';
+import Logo from '../../assets/img/MBP_Logo.png';
 
 const Welcome = () => {
 	return (
 		<div>
 			<div>
-				<img src={logo} alt='Logo' className='logo' />
+				<img className='logo' src={Logo} alt='Logo' />
+				<h1>Welcome</h1>
 			</div>
 			<div>
 				<h3>Intro message here</h3>
