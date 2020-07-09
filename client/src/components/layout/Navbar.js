@@ -1,38 +1,43 @@
 import React, { Fragment } from 'react';
+
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import DropdownItem from 'react-bootstrap/esm/DropdownItem';
+import { LinkContainer } from 'react-router-bootstrap';
+
 import { PERSONNEL_PAGE, ABOUT_PAGE, CONTACT_PAGE } from '../routes/Routes';
 
 const NavbarNavigation = () => {
 	return (
 		<Fragment>
 			{' '}
-			<Navbar expand='sm' variant='dark' bg='dark' sticky='top'>
-				<Navbar.Brand className=''>
-					<h4>MB Physiotherapists</h4>
+			<Navbar collapseOnSelect expand='md' variant='dark' bg='dark' sticky='top'>
+				<Navbar.Brand className='ml-5 pl-5 mr-5 pr-5'>
+					<strong>
+						Maahir Behardien <br />
+						Physiotherapists
+					</strong>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='ml-auto bold_font'>
-						<NavLink className='nav-link' to='maahir-behardien-physio'>
-							Home
-						</NavLink>
+						<LinkContainer to='maahir-behardien-physio'>
+							<Nav.Link>Home</Nav.Link>
+						</LinkContainer>
 
 						<NavDropdown title='About us' id='collasible-nav-dropdown'>
-							<NavLink className='dropdown-item' to={ABOUT_PAGE}>
-								What we do
-							</NavLink>{' '}
-							<NavLink className='dropdown-item' to={PERSONNEL_PAGE}>
-								Personnel
-							</NavLink>
-						</NavDropdown>
+							<LinkContainer to={ABOUT_PAGE}>
+								<DropdownItem>Who we are</DropdownItem>
+							</LinkContainer>
 
-						<NavLink className='nav-link' to={CONTACT_PAGE}>
-							Contact
-						</NavLink>
+							<LinkContainer to={PERSONNEL_PAGE}>
+								<DropdownItem>Personell</DropdownItem>
+							</LinkContainer>
+						</NavDropdown>
+						<LinkContainer to={CONTACT_PAGE}>
+							<Nav.Link>Contact</Nav.Link>
+						</LinkContainer>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

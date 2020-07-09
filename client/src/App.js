@@ -7,10 +7,12 @@ import Navbar from './components/layout/Navbar';
 
 import Container from 'react-bootstrap/Container';
 
-import Home from './components/pages/Home';
+import Home from './components/pages/home/Home';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Personnel from './components/pages/Personnel';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
 	CONTACT_PAGE,

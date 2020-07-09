@@ -4,6 +4,7 @@
 	font-family: pt-sans-caption, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	scroll-behavior: smooth;
 }
 
 .logo {
@@ -18,4 +19,25 @@
 
 .f-1 {
 	font-size: 20px;
+}
+
+.view_height_50 {
+	height: 50vh;
+	width: auto;
+}
+
+.view_height_25 {
+	height: 25vh;
+	width: auto;
+}
+
+.center_text {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.height_split {
+	height: 50%;
 }
