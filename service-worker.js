@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/maahir-behardien-physio/precache-manifest.2faeeaf11dee314ac688c589c82b286d.js"
+  "/maahir-behardien-physio/precache-manifest.b646466216ac7ef62772c3f51d2fe48e.js"
 );
 
 self.addEventListener('message', (event) => {
