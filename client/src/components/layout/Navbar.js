@@ -13,15 +13,14 @@ const NavbarNavigation = () => {
 		<Fragment>
 			{' '}
 			<Navbar collapseOnSelect expand='md' variant='dark' bg='dark' sticky='top'>
-				<Navbar.Brand className='ml-5 pl-5 mr-5 pr-5'>
-					<strong>
-						Maahir Behardien <br />
-						Physiotherapists
-					</strong>
+				<Navbar.Brand className='ml-2'>
+					<strong id='underline_animation'>MAAHIR BEHARDIEN </strong>
+					<br />
+					<strong>PHYSIOTHERAPISTS</strong>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
-					<Nav className='ml-auto bold_font'>
+					<Nav className=' bold_font ml-auto'>
 						<LinkContainer to='maahir-behardien-physio'>
 							<Nav.Link>Home</Nav.Link>
 						</LinkContainer>

@@ -7,6 +7,8 @@
 	scroll-behavior: smooth;
 }
 
+/*Navbar*/
+
 .logo {
 	width: 192px;
 	height: 144px;
@@ -40,4 +42,52 @@
 
 .height_split {
 	height: 50%;
+}
+
+#underline_animation {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	border-radius: 10px;
+}
+
+@keyframes border {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes border {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+#underline_animation:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: white;
+	-webkit-animation-name: border; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+	animation-name: border;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	border-radius: 10px;
+}
+
+/*positions - columns*/
+
+.center_text {
+	text-align: center;
 }

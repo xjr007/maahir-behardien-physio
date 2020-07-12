@@ -1,23 +1,22 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const Welcome = () => {
 	return (
 		<section>
-			<Container fluid className='bg-warning view_height_50'>
-				<Row className='pt-5 pb-5'>
-					<Col md={{ offset: 4 }}>
-						<h1>Your health</h1>
-					</Col>
-				</Row>
+			<Jumbotron className='bg-warning view_height_50'>
 				<Row>
-					<Col md={{ offset: 4 }}>
-						<h1>is in good hands</h1>
+					<Col lg={6} md={6} sm={12} xs={12}>
+						<h1 className='center_text'>Your health</h1>
+						<h3 className='center_text'>is in good hands</h3>
+					</Col>
+					<Col lg='auto' md='auto' sm={6} xs={6}>
+						<img src='https://i.pravatar.cc/150?img=9' alt='avatar' thumbnail />
 					</Col>
 				</Row>
-			</Container>
+			</Jumbotron>
 		</section>
 	);
 };

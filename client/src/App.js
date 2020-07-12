@@ -14,18 +14,14 @@ import Personnel from './components/pages/Personnel';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {
-	CONTACT_PAGE,
-	ABOUT_PAGE,
-	PERSONNEL_PAGE,
-} from './components/routes/Routes';
+import { CONTACT_PAGE, ABOUT_PAGE, PERSONNEL_PAGE } from './components/routes/Routes';
 
 const App = () => {
 	return (
 		<Fragment>
 			<Router>
 				<Navbar />
-				<Container fluid>
+				<Container fluid className='justify-content-center'>
 					<Switch>
 						<Route exact path='/maahir-behardien-physio/' component={Home} />
 						<Route exact path={CONTACT_PAGE} component={Contact} />
